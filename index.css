@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, li, ul, h1, h2, h3, h4, h5, h6, p, pre {
+  list-style: none;
+}
+
+.zise {
+  background: #C971E3;
+}
+
+.lvse {
+  background: #6DDC32;
+}
+
+.lanse {
+  background: #40ACF9;
+}
+
+.zunse {
+  background: #F2CB00;
+}
+
+.hese {
+  background: #9F855D;
+}
+
+.hongse {
+  background: #F72369;
+}
+
+.huang {
+  background: #F89500;
+}
+
+.zise-text {
+  color: #C971E3;
+}
+
+.lvse-text {
+  color: #6DDC32;
+}
+
+.zunse-text {
+  color: #F2CB00;
+}
+
+.hese-color {
+  color: #9F855D;
+}
+
+.huang-text {
+  color: #F89500;
+}
+
+.hongse-text {
+  color: #F72369;
+}
+
+.lanse-text {
+  color: #40ACF9;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+.circle {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+}
+
+.fla {
+  display: inline-block;
+  height: 100%;
+  line-height: 45px;
+  color: #D0D0D0;
+  margin-left: 50px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  height: 628px;
+  width: 100%;
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background: #383836;
+}
+
+.head {
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+
+.head .logo {
+  background: url("packed-5.png") 0px -588px no-repeat;
+  position: absolute;
+  width: 56px;
+  height: 16px;
+  top: 14px;
+  left: 12px;
+}
+
+.head .list-title {
+  height: 100%;
+  line-height: 45px;
+  font-size: 18px;
+  color: #D0D0D0;
+  margin-left: 100px;
+}
+
+.head .addlist {
+  background: url("packed-5.png") no-repeat -23px -526px;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.uidiv {
+  height: 600px;
+  overflow: auto;
+  width: 100%;
+}
+
+.uidiv li:nth-child(1) {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+.uidiv li:nth-child(1) span {
+  display: inline-block;
+  height: 25px;
+  float: left;
+  width: 25px;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+  background: url("packed-5.png") 0 -359px no-repeat;
+}
+
+.uidiv li:nth-child(1) a {
+  display: inline-block;
+  height: 100%;
+  line-height: 45px;
+  color: #D0D0D0;
+  margin-left: 100px;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  float: left;
+  height: 100%;
+  width: 70%;
+  background: #F9F9F9;
+}
+
+.right .rightli {
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.right .rightli span {
+  background: url("packed-5.png") -138px -359px no-repeat;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.right .rightli input {
+  border: 0;
+  outline: none;
+  height: 100%;
+  margin-left: 50px;
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background: #fff;
+}
+
+.right .rightla {
+  height: 48px;
+  width: 100%;
+  margin: 30px 0 10px 0;
+  line-height: 48px;
+}
+
+.right .rightla ul {
+  width: 100%;
+}
+
+.right .rightla ul li {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+  color: #868686;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.right .rightla ul li span {
+  position: relative;
+}
+
+.qin {
+  width: 100%;
+  height: auto;
+}
+
+.qin > span {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.qin .t1 {
+  height: 48px;
+  line-height: 48px;
+}
+
+.circle1 {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 15px;
+  float: left;
+}
+
+input {
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 300px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background: inherit;
+  color: inherit;
+}
+
+.er {
+  background: #fff;
+}
+
+.rightsa {
+  /*display:none;*/
+  height: 230px;
+  width: 360px;
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px #999999;
+}
+
+.rightsa .rightsa1 {
+  height: 222px;
+  width: 352px;
+  margin: 4px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px #999999;
+}
+
+.rightsa .rightsa1 input {
+  margin: 10px 20px;
+  border: 0;
+  outline: none;
+  height: 42px;
+  width: 312px;
+  background: #FFFFFF;
+}
+
+.rightsa .rightsa1 ul {
+  height: auto;
+  width: 100%;
+}
+
+.rightsa .rightsa1 ul span {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 10px;
+}
+
+.rightsa .rightsa1 ul li {
+  height: 30px;
+  width: 30px;
+  /*background:red;*/
+  float: left;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.rightsa .rightsa1-1 {
+  line-height: 53px;
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+  height: 53px;
+}
+
+.rightsa .rightsa1-1 span:nth-child(1) {
+  float: left;
+}
+
+.rightsa .rightsa1-1 span {
+  display: inline-block;
+  padding: 0 15px;
+  float: right;
+}

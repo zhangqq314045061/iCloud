@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todo">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>注意事项</title>
+		<script src="js/angular.js"></script>
+	<script src="js/angular-animate.js"></script>
+  <script src="js/index.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body ng-controller="main">
+<div class="box">
+<div class="left">
+
+<div class="head">
+<div class="logo"></div>
+<div class="list-title">提醒事项</div>
+<div class="addlist" ng-click="add()"></div>
+</div>
+<div class="uidiv">
+<ul>
+	<li>
+	<span></span>
+<a href="#">已计划</a>
+	</li>
+
+
+<li ng-class="{'.zise-text':currentQingdan}"
+ ng-click="setCurrent($index)"
+ ng-repeat="(k,v) in qingdan">
+	<span class="circle" ng-class="v.theme"></span>
+<a href="#" class="fla"><input ng-change="data()" type="text" ng-model="v.name"></a>
+<!-- <a href="#">{{v.id}}</a> -->
+	</li>
+
+</ul>
+
+</div>
+
+</div>
+<div class="right">
+<div class="rightli">
+ <span></span>
+ <input type="text" placeholder="搜索所有提醒">
+</div>
+<div class="rightla">
+<ul>
+	<li><span  ng-click="toggle=!toggle">选项</span></li>
+</ul>
+</div>
+	<div class="rightsa" ng-show="toggle" ng-init="toggle=false">
+<div class="rightsa1">
+<input type="text" ng-model="currentQingdan.name" class=" {{currentQingdan.theme}}-text">
+<ul>
+<span>列表颜色</span>
+<li
+ ng-repeat="(i,n) in yanse"
+
+ class="{{n}}"></li>
+
+</ul>
+<div class="rightsa1-1">
+<span class="hongse-text"  ng-model="currentQingdan.id" ng-click="del(id)">删除</span>
+<span class="lanse-text" ng-click="toggle=!toggle">取消</span>
+<span class="lanse-text weight">完成</span>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="qin  {{currentQingdan.theme}}-text">
+<span>
+<span  ng-click="v.state=!v.state" class="circle {{currentQingdan.theme}}"></span> 
+ <h4 class="t1"><input type="text" ng-change="data()"  ng-model="currentQingdan.name"></h4>
+</span>
+<span>
+<div class="circle1 {{currentQingdan.theme}}"></div>
+ <h4 class="t1"><input type="text" ng-change="data()" ng-model="currentQingdan.id"></h4>
+
+</span>
+<span>
+<div class="circle1 {{currentQingdan.theme}}"></div>
+ <h4 class="t1"><input type="text" ng-change="data()" ng-model="currentQingdan.theme"></h4>
+</span>
+<span></span>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+	
+
+
+</div>
+</body>
+</html>
